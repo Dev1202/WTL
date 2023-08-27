@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #3bf447d8;
+            padding: 10px;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        
+        nav a {
+            color: #343333;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #ffffff;
+        }
+        
+        section {
+            padding: 40px;
+        }
+        
+        .flower-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .flower-gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Floral Heaven</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#flowers">Flowers</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to the Floral Heaven!</h2>
+    <p>Welcome to Floral Heaven Flower Shop, where blooms come to life, and dreams take root. 
+        Immerse yourself in a world of captivating floral artistry that sparks joy and celebration. 
+        Our passion for crafting exquisite arrangements is matched only by our commitment to customer satisfaction. 
+        With an eye for detail and a touch of creativity, our skilled florists handpick the freshest flowers to create 
+        stunning bouquets for every occasion.
+    </p>
+  </section>
+
+  <section id="flowers">
+    <h2>Flower Stock</h2>
+    <div class="flower-gallery">
+      <img src="./most-popular-flowers-roses_480x480.webp" alt="Flower 1">
+      <img src="./tulip.jpg" alt="Flower 2">
+      <img src="./sunflower.jpg" alt="Flower 3">
+      <img src="./daffodils.jpg" alt="Flower 3">
+      <img src="./marigold.jpg" alt="Flower 3">
+      <img src="./daisy.jpg" alt="Flower 3">
+      <img src="./orchids.jpg" alt="Flower 3">
+      <img src="./carnations.jpg" alt="Flower 3">
+      <img src="./gerberas.jpg" alt="Flower 3">
+      <img src="./jasmine.jpg" alt="Flower 3">
+      <img src="./most-popular-flowers-lilies_480x480.webp" alt="Flower 3">
+      <img src="./lotus.jpg" alt="Flower 3">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+        Welcome to Floral Heaven Flower Shop, where blossoms bloom and dreams flourish. 
+        Established with a passion for flowers and a love for spreading joy, Floral Heaven is a haven for all things floral. 
+        Our dedicated team of skilled florists takes pride in handcrafting each arrangement with precision and creativity, 
+        ensuring that every petal speaks the language of beauty and elegance.
+    </p>
+    <p>
+        At Floral Heaven, we believe in the power of flowers to express emotions and create unforgettable memories.
+        Whether it's a momentous celebration, a heartfelt gesture, or a simple reminder of love, our exquisite floral 
+        designs cater to every occasion and sentiment.
+    </p>
+    <p>
+        With a commitment to excellence, we source only the freshest and finest blooms, embracing nature's bounty to 
+        infuse your life with the essence of nature.Our personalized approach and attention to detail guarantee a seamless 
+        experience, from selection to delivery.
+    </p>
+    <p>
+        Discover the magic of flowers at Floral Heaven, where artistry meets nature to create a world of enchanting floral wonders. 
+        Let us be a part of your special moments and make every occasion extraordinary with our carefully curated floral masterpieces.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@floralheaven.com</p>
+    <p>Phone: +91-9630258741</p>
+  </section>
+</body>
+</html>
