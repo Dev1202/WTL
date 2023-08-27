@@ -1,0 +1,89 @@
+JS Code:
+function performOperation(operation) {
+    var num1 = parseFloat(document.getElementById('num1').value);
+    var num2 = parseFloat(document.getElementById('num2').value);
+    var resultElement = document.getElementById('result');
+    
+    if (isNaN(num1) || isNaN(num2)) {
+        resultElement.textContent = "Invalid input";
+        return;
+    }
+    
+    var result;
+    
+    switch (operation) {
+        case 'add':
+            result = num1 + num2;
+            break;
+        case 'sub':
+            result = num1 - num2;
+            break;
+        case 'mul':
+            result = num1 * num2;
+            break;
+        case 'div':
+            result = num1 / num2;
+            break;
+        default:
+            result = "Invalid operation";
+    }
+    
+    resultElement.textContent = "Result: " + result;
+}
+
+function performOperationFromDropdown() {
+    var selectedOperation = document.getElementById('operation').value;
+    performOperation(selectedOperation);
+}
+
+
+
+HTML Code:
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arithmetic Operations</title>
+    <style>
+        body {
+         background-color: rgb(229, 190, 255) ;
+         align-items: center;
+         text-align: center;
+         padding-top: 300px;
+        }
+        div {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Arithmetic Operations</h1>
+        
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        
+        
+        <select id="operation">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="mul">Multiply</option>
+            <option value="div">Divide</option>
+        </select>
+        <button onclick="performOperationFromDropdown()">Calculate</button>
+        
+        <p id="result"></p>
+        
+        <script src="3x.js"></script>
+    </div>
+</body>
+</html>
+
+Explanation :
+The 2 function that used are:
+1. performOperation(operation): This function takes an operation ('add', 'sub', 'mul', 'div') as input. It retrieves two numeric values from HTML input elements with the IDs 'num1' and 'num2'. It then checks if the values are valid numbers. If not, it displays "Invalid input." It performs the specified operation on the numbers using a switch statement and displays the result in an HTML element with the ID 'result'.
+
+2. performOperationFromDropdown(): This function retrieves the selected operation from a dropdown list with the ID 'operation' and calls the `performOperation` function with the selected operation as an argument.
+
