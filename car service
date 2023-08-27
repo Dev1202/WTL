@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir's Car Service Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0dfdf;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .workshop-photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .workshop-photo {
+            width: 100%;
+            height: auto;
+        }
+
+        .car-accessories {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .car-accessory {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .service-packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service-package {
+            border: 1px solid #000000;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elixir's Car Service Center</h1>
+    </header>
+
+    <div class="container">
+        <h2>Workshop</h2>
+        <div class="workshop-photos">
+            <img class="workshop-photo" src="./istockphoto-487804885-612x612.jpg" alt="Car Workshop">
+            <img class="workshop-photo" src="./istockphoto-515009943-612x612.jpg" alt="Car Workshop">
+            <img class="workshop-photo" src="./car-lifting-equipment-garage-being-repair-fix_103864-175.avif" alt="Car Workshop">
+        </div>
+
+        <h2>Car Accessories</h2>
+        <div class="car-accessories">
+            <div class="car-accessory">
+                <img src="./tires.jpg" alt="Car Accessory" style="height: 200px ;width: 250px;">
+                <p><b>Tires</b></p>
+            </div>
+            <div class="car-accessory">
+                <img src="./lights.avif" alt="Car Accessory" style="height: 200px ;width: 250px;">
+                <p><b>Lights</b></p>
+            </div>
+            <div class="car-accessory">
+                <img src="./qwe.jpg" alt="Car Accessory" style="height: 200px ;width: 250px;">
+                <p><b>Mirrors</b></p>
+            </div>
+        </div>
+        <div class="car-accessories">
+            <div class="car-accessory">
+                <img src="./interior.jpeg" alt="Car Accessory" style="height: 200px ;width: 350px;">
+                <p><b>Audio System & Interiors</b></p>
+            </div>
+            <div class="car-accessory">
+                <img src="./bonet.webp" alt="Car Accessory" style="height: 200px ;width: 250px;">
+                <p><b>Bumper & Bonets</b></p>
+            </div>
+        </div>
+
+        <h2>Car Servicing Packages</h2>
+        <div class="service-packages">
+            <div class="service-package">
+                <h3>Basic Package</h3>
+                <h4>Services</h4>
+                    <li>Oil Change</li>
+                    <li>Fluid Top-up</li>
+                    <li>Tire Rotation</li>
+                    <li>Brake Inspection</li><br><br><br><br>
+                <h4>Price: Rs. 1299</h4>
+            </div>
+            <div class="service-package">
+                <h3>Standard Package</h3>
+                <h4>Services</h4>
+                    <li>Oil Change</li>
+                    <li>Fluid Top-up</li>
+                    <li>Tire Rotation</li>
+                    <li>Brake Inspection</li>
+                    <li>Wheel Alignment</li><br><br><br>
+                <h4>Price: Rs. 1499</h4>
+            </div>
+            <div class="service-package">
+                <h3>Premium Package</h3>
+                <h4>Services</h4>
+                    <li>Oil Change</li>
+                    <li>Fluid Top-up</li>
+                    <li>Tire Rotation</li>
+                    <li>Brake Inspection</li>
+                    <li>Wheel Alignment</li>
+                    <li>Suspension Check</li>
+                    <li>Car Wash</li><br>
+                <h4>Price: Rs. 1999</h4>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
