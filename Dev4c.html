@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function fun1(){
+                var st=document.getElementById("i1").value;
+                var c=document.getElementById("c1").value;
+                var i=0;
+                for(let j=0;j<st.length; j++)
+                {
+                    if(st.charAt(j)==c)
+                    {
+                        i++;
+                    }
+                }   
+                document.getElementById("d1").innerHTML="count is:"+i;
+            }
+          
+        </script>
+        Enter string:
+        <input type ="text" id="i1" />
+        <br><br>
+        Enter letter whose occurence has to calculated:
+        <input type="text" id="c1" />
+        <br><br>
+        <input type="button" id="s1" value="show count" onclick="fun1()"/>
+        <br><br>
+        <div id="d1">Count</div>
+    </body>
+</html>
