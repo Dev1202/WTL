@@ -1,0 +1,58 @@
+JS Code:
+var userInput = prompt("Enter your name:");
+
+if (userInput !== null && userInput.trim() !== "") {
+ 
+    var inputname = "Hello " + userInput + " Welcome To World of JavaScript";
+
+    
+    console.log(inputname);
+} else {
+    console.log("Invalid input");
+}
+
+
+
+HTML Code:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>INPUT USER NAME</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(to top left, #32a1d0, #a9d8ff);
+      }
+      h1 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 70px;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>INPUT USER NAME</h1>
+
+   <script src="3.js"></script>
+  </body>
+</html>
+
+
+Explanation :
+
+1.var userInput = prompt("Enter your name:");: 
+This line displays a pop-up dialog box in the user's browser with the message "Enter your name:". The user is expected to type in their name and click "OK" or press "Enter."
+
+2.if (userInput !== null && userInput.trim() !== "") {: This line begins an "if" statement. It checks whether the value stored in the userInput variable is not null (meaning the user didn't click the "Cancel" button on the pop-up) and whether the input, after removing any leading or trailing spaces using .trim(), is not an empty string.
+3.Inside the "if" block:
+var inputname = "Hello " + userInput + " Welcome To World of JavaScript";: This line creates a new string by combining the text "Hello," the user's input (their name), and "Welcome To World of JavaScript." The resulting string is stored in the inputname variable.
+
+console.log(inputname);: This line outputs the content of the inputname variable to the browser's console. 
